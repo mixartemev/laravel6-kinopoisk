@@ -9,9 +9,6 @@ class HomeController extends Controller
 {
     public function getData()
     {
-        $domains = DB::table('films')
-            ->select('*')
-            ->get(); // you were missing the get method
-        return response()->json($domains, 200, ['Access-Control-Allow-Origin' => '*']);
+
     }
 }

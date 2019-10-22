@@ -17,4 +17,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/sample-restful-apis','HomeController@getData');
+Route::get('/sample-restful-apis','FilmController@index');
